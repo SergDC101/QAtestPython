@@ -1,8 +1,8 @@
 import pytest
+from selenium import webdriver
+
 
 @pytest.mark.usefixtures('setup')
 class TestHomepage:
+    pass
 
-
-    def test_homepage(self):
-        pass

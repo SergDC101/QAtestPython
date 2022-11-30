@@ -28,5 +28,6 @@ def setup(request, get_webdriver):
     if request.cls is not None:
         request.cls.driver = driver
     driver.get(url)
+    driver.delete_all_cookies()
     yield driver
     driver.quit()
